@@ -25,7 +25,7 @@ header .topheader{
   font-size: 12px;
   padding: 6px 0;
   /*border-bottom: 1px solid #f00000;*/
-  background: #fafafa;  
+  background:#160040;  
   overflow: hidden;
 }
 .aside{
@@ -43,7 +43,7 @@ header .topheader .container .menu ul li{
 }
 header .topheader .container .menu ul li a{
   text-decoration: none;
-  color: #363940;
+  color: #f9fafd;
   padding: 10px 15px;
   display: inline-block;
 }
@@ -62,7 +62,7 @@ header .topheader .container .Redes ul li{
 }
 header .topheader .container .Redes ul li a{
   text-decoration: none;
-  color: #363940;
+  color: #f9fafd;
   padding: 10px 15px;
   display: inline-block;
 }
@@ -193,36 +193,50 @@ header .topheader .container .Redes ul li a:hover{
   background: #7d7d7d;
   color: #fff;
 }
-.aside .widget{
+.aside{
+  /*position: fixed;*/
+  overflow: hidden;
+}
+.aside .widget1{
   background: #fff;
   padding: 40px;
   margin-bottom: 20px;
   border: 1px solid #f0f0f0;
 }
-.aside .widget .autorio .photo{
+.aside .widget2{
+  background:#160040;
+  padding: 40px;
+  margin-bottom: 20px;
+  border: 1px solid #f0f0f0;
+}
+.aside .widget1 .autorio .photo{
   text-align: center;
   margin-bottom: 10px;
 }
-.aside .widget .autorio .photo img{
+.aside .widget1 .autorio .photo img{
   border-radius: 50%; 
 }
-.aside .widget .autorio .datos{
+.aside .widget1 .autorio .datos{
   color:#363940;
   font-size: 16px;
   margin-bottom: 10px;
-}
-.aside .widget .destacados{
   text-align: center;
 }
-.aside .widget .destacados ul li a{
-  color: #363636;
+.aside .widget2 .destacados{
+  text-align: center;
+}
+.aside .widget2 .destacados h3{
+  color: #fff;
+}
+.aside .widget2 .destacados ul li a{
+  color: #fff;
   font-size: 16px;
   display: block;
   padding: 20px 0;
   border-bottom: 1px solid #f0f0f0;
   text-decoration: none;
 }
-.aside .widget .destacados ul li a:hover{
+.aside .widget2 .destacados ul li a:hover{
   text-decoration: underline;
   color: #8b919C;
 }
@@ -235,11 +249,12 @@ header .topheader .container .Redes ul li a:hover{
   padding: 60px;
   border: 1px solid #f0f0f0;
   margin-bottom: 20px; 
+  font-size: 11px;
 }
 footer{
-  background: #fff;
+  background:#160040;
   padding: 40px;
   border: 1px solid #f0f0f0;
   text-align: center;
-  color: #9c9c9c;
+  color: #fff;
 } 
