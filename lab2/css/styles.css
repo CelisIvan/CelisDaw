@@ -172,6 +172,7 @@ header .topheader .container .Redes ul li a:hover{
 .blog .container .content .articulo .text-inside p{
   margin-bottom: 20px;
   color:#363940;
+  text-align: justify;
 }
 .blog .container .content .articulo .button a{
   background: none;
@@ -220,7 +221,7 @@ header .topheader .container .Redes ul li a:hover{
   color:#363940;
   font-size: 16px;
   margin-bottom: 10px;
-  text-align: center;
+  text-align: justify;
 }
 .aside .widget2 .destacados{
   text-align: center;
@@ -248,7 +249,7 @@ header .topheader .container .Redes ul li a:hover{
   width: 68%;
 }
 .blog .container .fuentes .contenifu{
-  background: #fff;
+  background: #550084;
   padding: 60px;
   border: 1px solid #f0f0f0;
   margin-bottom: 20px; 
