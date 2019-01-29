@@ -116,6 +116,7 @@ function primo(x)
     return true ;
 }
 document.write("<br/>"+"<br/>"+"RESPUESTAS AL PROBLEMA"+"<br/>")
+//FUNCIÓN PARA EMPEZAR A RESOLVER EL POPRBLEMA
 function principal(){
     let rain ;
      let n=prompt("Ingresa la cantidad de números a analizar")
