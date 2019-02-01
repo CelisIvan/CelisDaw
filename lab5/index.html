@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab 5</title>
+</head>
+<body>
+    <section class="header">
+        LABORATORIO 5
+    </section>
+    <article class="contenido">
+        <form action="" method="post" id="miformu" >
+            <table>
+                <tr>
+                    <td>Introduce tu contraseña</td>
+                    <td><input type="password" name="contra" id="contra" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un numero, una minúscula, una minúscula y ser de 8 o más caractéres" required></td> 
+                </tr>
+                <tr>
+                        <td>Confirma tu contraseña</td>
+                       <td> <input type="password" id="contravali" name="contravali" title="Debe de coincidir con la password original" required></td>
+                </tr>
+            </table>
+            <input type="submit" value="Enviar" id="enviar">
+            
+        </form>
+    </article>
+    <script src="script.js"></script>    
+</body>
+</html>

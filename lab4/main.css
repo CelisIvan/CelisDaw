@@ -1,3 +1,10 @@
-*{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+*{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background: #F8F9B0;}
+.todo{
+    width: 1000px;
+    float: inherit;
+    margin-left: 100px;
+    float: center;
+}
+.todo h1{font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;}

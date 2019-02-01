@@ -11,7 +11,8 @@ let rand1= Math.floor((Math.random()*300)+1);
 let rand2= Math.floor((Math.random()*300)+1);
 //crear una fecha al momento de generar los numeros
 ini_mseg= new Date();
-//console.log(26);
+function primera(){
+    //console.log(26);
 let num2= prompt("¿Cuanto da la suma de "+rand1+" + "+rand2 +"?")
 //console.log(num2);
 //Crear una nueva fecha al momento de recibir la respuesta
@@ -33,6 +34,7 @@ for(i=0;i<20;i++){
     nums[i]=Math.floor((Math.random()*42)-20);
 }
 
+}
 let pos=0,neg=0,ceros=0;
 document.write("<br/>")
 function contador(arre){
