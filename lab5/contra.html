@@ -89,12 +89,39 @@
     
     <section id="formu3">
         <br>
-        <h3>¡Perfecto! Ahora solo llena esta forma para conservar tus datos y que te llegue el pedido :v</h3>
-        <form>
-               <label>E-mail:</label> <input type="email" title="Introduce un correo electónico" name="correo">
+        <h3>COMPLETA ESTA FORMA POR FAVOR</h3>
+        <form action="" name="miformu3" id="miformu3"  method="POST">
+               <label>E-mail:</label> <input type="email" title="Introduce un correo electónico" id="Correo">
                <br>
-               <label>Edad:</label> <input type="number" title="Entre 18 y 100 años" name="correo">
+               <label>Edad:</label> <input type="number" title="Entre 18 y 100 años" name="Edad">
+               <br>
+               <label>Dirección:</label> <input type="text" max="50" min="5" title="Dirección a Enviar el paquete" id="Direccion">
+               <br>
+               <label>Código postal:</label> <input type="number" title="Código postal Válido" id="cp">
+               <br>
+               <h4>Preguntas de relleno sobre anime :v</h4>
+               <label>¿Cuántos animes has visto?</label><input type="number" max="5000" min="5" title="número de animes en el registro" name="numanim">
+               <p id="numanimtext"></p>
+               <br>
+               <label>¿Estás de acuerdo con las recientes medidas a los sitios donde se transmitía anime? Sí/No</label><input type="text" min="2" max="2" title="Solo sí o no" required name="sino">
+               <p id="acdes"></p>
+               <br>
+               <label>¿Por qué?</label> <input type="text" id="argumento" min="5" max="100">
+               <p id="juai"></p>
+               <br>
+               <td><input type="button" value="Confirmar" id="Confirmar" onclick="Confirma()"></td>
         </form>
+    </section>
+    <section class="preguntas" id="preguntas">
+        <h3>PREGUNTAS:</h3>
+        <ul>
+            <li>Se recomienda usar Javascript para validar los formularios puesto que hace este proceso más eficiente y confiable</li>
+            <li>Aunque sea confiable Saltarse la validación javascript es muy sencillo, te basta con deshabilitar el javascript en el navegador.
+                 En todo caso viendo el javascript y el "action" del form podrás ver a donde esta dirigido. Igualmente se puede conseguir el mismo efecto
+                inyectando un código de xss</li>
+            <li>A pesar de esto, se recomienda puesto que gran parte de los usuarios no conocen estas prácticas, además de que mejora
+                enormemente la experiencia del usuario, haciendo el feedback instantáneo y mucho más visual</li>
+        </ul>
     </section>
     <script src="script.js"></script>    
 </body>
