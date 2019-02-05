@@ -1,56 +1,30 @@
+document.getElementById("productos").style.display="none";
+document.getElementById("formu3").style.display="none";
+document['miformu']['contra'].focus();
 
-// window.onload=iniciar;
-// function iniciar(){
-//     document.getElementById("enviar").addEventListener('click',validar,false);
-// }
 function validaContra(){
-    let elemento=document.getElementById("contra");
-    let pas1=document.getElementById("contra").value;
-    let pas2=document.getElementById("contravali").value;
+    let pas1=document['miformu']['contra'].value;
+    let pas2=document['miformu']['contravali'].value;
     console.log(pas1);
     console.log(pas2);
-    let res1,res2,res3,res4,resmax;
-    let espacios=false;
-    let conta=0;
-    if(!elemento.checkValidity()){
-        res1=false;
-        console.log("res1: "+ res1);
-        return false;
-    }
-    while(espacios&&(conta<pas1.length)){
-        if(pas1.charAt(conta)==" ")
-            espacios=true;
-        conta ++;
-    }
-    if(espacios){
-        alert("La contraseña no puede tener espacios")
-        res2=false;
-        console.log("res2: "+ res2);
-        return false;
-    }
-    if (pas1.length == 0 || pas2.length == 0) {
-        alert("Los campos de la password no pueden quedar vacios");
-        res3=false;
-        console.log("res3: "+ res3);
-        return false;
-      }
-      if (p1 != p2) {
-        alert("Las passwords deben de coincidir");
-        res4=false;
-        console.log("res4: "+ res4);
-        return false;
-      }
-      resmax=true;
-        console.log("resmax: "+ resmax);
-
-    return true;
-}
-function validar(e){
-    if(validaContra() && confirm("Pulsa aceptar si quieres enviar el formulario"))
+    if(pas1!=pas2)
     {
-        return true;
-    }else{
-        e.preventDefault();
-        return false;
+        alert("¡Las contraseñas deben coincidir!");
+        document['miformu']['contravali'].focus();
     }
+    else{
+        alert("Perfecto, ya puedes empezar a comprar");
+        document.getElementById("productos").style.display="block";
+    }
+    return false;
 }
+function Comprar(){
+    let cant1=document.getElementById("numchoco").value;
+    let cant2=document.getElementById("numpocky").value;
+    let cant3=document.getElementById("numcrack").value;
+    if(cant1!=null&&cant2!=null&&cant3!=null){
+        document.getElementById("formu3").style.display="block";
+    }
+    return false;
+}
+

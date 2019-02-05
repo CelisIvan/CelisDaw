@@ -4,14 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
     <title>Lab 5</title>
 </head>
 <body>
-    <section class="header">
-        LABORATORIO 5
+    <nav>
+        <h1>LABORATORIO 5</h1>
+    </nav>
+    <header>
+        Un poco de Shingeki no Kyojin
+    </header>
+    <article>
+        <img src="img/mikasawp.jpg">
+    </article>  
+    <section class="info">
+        <p> Serie manga escrita e ilustrada por Hajime Isayama. El manga se publicó por primera vez en septiembre de 2009 en 
+            la revista mensual Bessatsu Shōnen Magazine, de la editorial japonesa Kōdansha, y cada capítulo es de publicación mensual.
+             Hasta la fecha la serie ha recopilado 113 capítulos. En España, el manga ha sido publicada por Norma Editorial; en México
+              y parte de Hispanoamérica por la editorial Panini.</p>
+              <br>
+        <p>
+                La trama del manga gira en torno a Eren Jaeger y sus amigos de la infancia, Armin Arlert y Mikasa Ackerman, en un mundo 
+                donde la población humana vive concentrada dentro de tres grandes muros para protegerse de unos seres gigantescos llamados 
+                Titanes. Un día, su hogar es atacado por el Titan más grande jamás visto, causando una brecha y permitiendo el paso al resto
+                 de los titanes quienes invaden la ciudad devorando a todos los humanos que puedan capturar, entre ellos la madre de Eren. 
+                 Este junto a sus amigos decide unirse al ejército jurando combatir a los titanes hasta destruirlos a todos.
+        </p>
     </section>
-    <article class="contenido">
-        <form action="" method="post" id="miformu" onsubmit="return validaContra()" >
+    <section class="intro">
+        <strong>Iván Celis Maldonado</strong>
+        <p>Antes de disfrutar cualquier buen capítulo, es necesario comprar una buena botana</p>
+        <p>Por fortuna o desgracia, hoy solo contamos con tres productos</p>
+        <p>Para poder comprar y ver las opciones, debes de introducir tu contraseña</p>
+    </section>
+    <section class="contras" >
+        <form action="" name="miformu" onsubmit="return validaContra()" method="POST" >
             <table>
                 <tr>
                     <td>Introduce tu contraseña</td>
@@ -19,13 +46,56 @@
                 </tr>
                 <tr>
                         <td>Confirma tu contraseña</td>
-                       <td> <input type="password" id="contravali" name="contravali" title="Debe de coincidir con la password original" required></td>
+                       <td> <input type="password" id="contravali" name="contravali" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe de coincidir con la password original" required></td>
                 </tr>
             </table>
-            <input type="submit" value="Enviar" id="enviar">
-            
+            <input type="submit" value="Comprobar" id="calcula" name="calcula" >
         </form>
-    </article>
+    </section>
+    <section class="productos" id="productos">
+        <form action="" name="miformu2" id="miformu2" onsubmit=" return Comprar()" method="POST" >
+            <table>
+                <tr>
+                        <td>Chocoretas</td>
+                        <td><img src="img/chocoretas.jpg" width="150" height="150"></td>
+                        <td><strong>Precio:  </strong>  $15.50</td>
+                        <td><input type="number" min="1" max="100" required id="numchoco"></td>
+                    </tr>
+                    <tr>
+                            <td>Pockys</td>
+                            <td><img src="img/pockys.jpg" width="150" height="150"></td>
+                            <td><strong>Precio:  </strong>   $30</td>
+                            <td><input type="number" min="1" max="100" required id="numpocky"></td>
+                        </tr>
+                        <tr>
+                                <td>Crackups</td>
+                                <td><img src="img/crackups.jpg" width="150" height="150"></td>
+                                <td><strong>Precio:  </strong>  $10.50</td>
+                                <td><input type="number" min="1" max="100" required id="numcrack"> </td>
+                            </tr>
+                        <tr>
+                                    <td>*ASEGÚRATE DE CALCULAR EL PRECIO PRIMERO ANTES DE COMPRAR</td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="Calcular" id="calcula" name="calcula" onclick="Calcula()"> </td>
+                            <td><input type="submit" value="Comprar" id="comprar" ></td>
+                        </tr>
+                        
+         </table>
+         
+        </form>
+        <p id="calculo"></p>
+    </section>
+    
+    <section id="formu3">
+        <br>
+        <h3>¡Perfecto! Ahora solo llena esta forma para conservar tus datos y que te llegue el pedido :v</h3>
+        <form>
+               <label>E-mail:</label> <input type="email" title="Introduce un correo electónico" name="correo">
+               <br>
+               <label>Edad:</label> <input type="number" title="Entre 18 y 100 años" name="correo">
+        </form>
+    </section>
     <script src="script.js"></script>    
 </body>
 </html>

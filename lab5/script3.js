@@ -1,3 +1,0 @@
-function validaResp(){
-    let intento;
-}
