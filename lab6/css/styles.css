@@ -1,0 +1,83 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* margin: 0; */
+    /* padding: 0; */
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+nav{
+    background: #6000AF;
+    color: black;
+    text-align: center;
+    font-size: 2.5em;
+}
+header{
+    /*background: black;*/
+    text-align: center;
+    color: white;
+    background-image:url(../img/bckgnd.jpg);
+    background-color: transparent;
+    font-size: 75px;
+    height: 100px;
+}
+header h1{
+    font-size: 75 px;
+}
+section img{
+    width: 100%;
+}
+.info{
+    width: 75%;
+    border: 1px solid blue;
+    /* height: 200px;  */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    /* height: 300px; */
+}
+.info .texto{
+    width: 60%;
+    float: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    /* position: relative; */
+}
+.info .imagen{
+    float: right;
+    overflow: hidden; 
+    width: 28%;
+    height: auto;
+    /* position: relative; */
+
+}
+ .info .imagen img{
+    width: 100%;
+}
+body:after {
+    content: "Lucas Films"; 
+    font-size: 9em;  
+    color: rgb(218, 204, 255);
+    z-index: 9999;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+      
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
+    -ms-pointer-events: none;
+    -o-pointer-events: none;
+    pointer-events: none;
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
