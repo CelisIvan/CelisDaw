@@ -20,6 +20,9 @@
 
     <div class="info" id="info">
         <div class="texto" id="textintro">
+            <p>Tiempo que has pasado en la página:</p>
+            <p id="segundos"></p>
+            <p>segundos</p>
             <p>Es una serie de películas originalmente concebidas por el cineasta estadounidense George Lucas, y posteriormente, producidas 
                 y distribuidas por The Walt Disney Company a partir de 2012. </p>
             <p>Los acontecimientos tienen lugar en una galaxia ficticia de nombre desconocido y en un tiempo no especificado —solo se dice 
@@ -29,6 +32,41 @@
             </div>
         <div class="imagen">
             <img src="img/casco.jpg" alt="Stormtrooper">
+        </div>
+    </div>
+    <div class="imags">
+            <div>
+                 Por desgracia, muchos artes coceptuales e ideas no se han explotado
+                 como deberían y terminan en películas malas. Para muchos, las secuencias
+                 cinematográficas de los videojuegos como The Old Republic o The Force Unleashed son
+                 mejores que las últimas películas y eso me pone sad
+            </div>
+                <img class="desvanecer" src="img/arte.jpg" alt="arte conceptual starwars" />
+    </div>
+    <div class="arrastre">
+            <p>INTENTA ARRASTRAR LA IMAGEN</p>
+
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <br>
+            <img id="drag1" src="img/crucero.jpg" draggable="true" ondragstart="drag(event)" width="570" height="190">
+              
+    </div>
+    <div class="hidi">
+        <input type="button" name="boton1" id="boton1" onclick="mostrar()" value="Preguntas">
+        <div class="oculto" id="oculto">
+            <ul>
+                <li>La propiedad 'position' puede tomar los diferentes valores </li>
+                    <ul>
+                        <li>static: No se pocisiona de ninguna forma en especial</li>
+                        <li>relative:Se ajustará de acuerdo a su posición normal tomando en cuenta los márgenes</li>
+                        <li>fixed: Se mantiene siempre en la misma posición sin importar si la página se hace scroll</li>
+                        <li>absolute: Se ubica relativamente al elemento predecesor más cercano</li>
+                        <li>sticky: Se coloca basado en la posición del scroll del usuario</li>
+                    </ul>
+                <li>En la propiedad visibility de los elementos para css el valor predeterminado es viisible.
+                    Lo que quiere decir que cualquier elemento creado será visible por default</li>
+                <li>Una propiedad que es muy útil es el z-index el cual indica el orden de priorización de un elemento para ser desplegado</li>
+            </ul>
         </div>
     </div>
     <script src="js/script.js"></script>
