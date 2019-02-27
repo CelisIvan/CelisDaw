@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="css/styles.css">
+
+          
+  <title>Lab 9</title>
+</head>
+<body>
+    <nav>
+      <div class="nav-wrapper purple darken-4">
+        <a href="#" class="brand-logo"> &nbsp; Laboratorio 9</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="https://codigofacilito.com/cursos/PHP">Php</a></li>
+          <li><a href="https://www.w3schools.com/js/">JavaScript</a></li>
+          <li><a href="https://www.apachefriends.org/es/index.html">Xamp</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="secciones">
+        <div class="arreglos">
+          <h3>Arreglos</h3>
+            Arreglo 1:<br>
+            (se imprime arreglo 1)<br>
+            <?php imprime_arr($arr1)?>
+            <br>
+            Arreglo 2:<br>
+            (se imprime arreglo 2)<br>
+            <?php imprime_arr($arr2)?>
+            <br>
+            Promedio arreglo 1<br>
+            <?php promedio($arr1)?>
+            <br>
+            Promedio arreglo 2<br>
+            <?php promedio($arr2)?>
+            <br>
+            Media arreglo 1<br>
+            <?php mediana($arr1)?>
+            <br>
+            Media arreglo 2<br>
+            <?php mediana($arr2)?>
+        </div>
+        <hr>
+        <div class="tabla">
+          Tabla con las potencias
+            <?php potencias()?>
+            <hr>
+        </div>
+        <div class="preguntas">
+            <h3>Preguntas</h3>  
+            <p>
+                <strong>¿Qué hace la función phpinfo()? Describe y discute 3 datos que llamen tu atención.</strong><br>
+                Es la forma de probar que php esté funcionando. Se despliegan ciertos datos para que tu puedas apreciar si todo va bien<br>
+                Se me hace interesante la forma en la que es capaz de desplegar tu versión de sistema operativo con tu equipo así como todas
+                las configuraciones de las extensiones de php o si tienes soporte de IPv6
+                <strong>¿Qué cambios tendrías que hacer en la configuración del servidor para que pudiera ser apto en un ambiente de producción?</strong><br>
+                <strong>¿Cómo es que si el código está en un archivo con código html que se despliega del lado del cliente, se ejecuta del lado del servidor? Explica</strong><br>
+              </p>
+          </div>
+        <div class="problema">
+           <h3>Problema</h3>
+            <p>
+              SmallR es un arquero. SmallR está tomando un partido de arquero con Zanoes. 
+              Intentan disparar en el blanco por turnos, y SmallR dispara primero. 
+              La probabilidad de disparar al objetivo cada vez es a/b  para SmallR y c/d para Zanoes. 
+              El que dispare primero en el blanco debe ser el ganador.
+              Muestra la probabilidad de que SmallR gane el partido.
+              <br>
+              <strong>Entrada</strong><br>
+              Una sola línea contiene cuatro enteros. (1<=a,b,c,d<=1000,  0 < a/b< 1 < c/d  < 1)
+              <br>
+              <strong>Salida</strong><br>
+              Imprima a un solo número real, la probabilidad de que SmallR gane el partido.
+              <br>
+
+              <div class="formu">
+                <form name="formulario" method="get"  action="doc.php"onsubmit="problema()" >
+
+                  Numero 1: <input type="number" name="num2" value="">
+                  <br>
+                  Numero 2: <input type="number" name="num1" value="">
+                  Numero 3: <input type="number" name="num3" value="">
+                  <br>
+                  Numero 4: <input type="number" name="num4" value="">
+                  <input type="submit"/>
+                </form>
+              </div>
+            </p>
+        </div>
+    </div>
+    <footer class="page-footer purple darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">Los siguientes links sirven para ayudar al desarrollo de habilidades de desarroollo
+              de sistemas web
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="https://codigofacilito.com/">Codigo Facilito</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://www.w3schools.com/">W3Schools</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright purple darken-4">
+        <div class="container">
+        © 2019 Copyright
+        <a class="grey-text text-lighten-4 right" href="#!">Links de apoyo</a>
+        </div>
+      </div>
+    </footer>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
