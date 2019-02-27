@@ -44,10 +44,10 @@ function potencias(){
   
 }
 function problema(){
-    $a=$_POS['num1'];
-    $b=$_POST['num2'];
-    $c=$_POST['num3'];
-    $d=$_POST['num4'];
+    $a=1;
+    $b=3;
+    $c=1;
+    $d=3;
     //cin >>a>>b>>c>>d;
     $pro1= $a / $b;
     $pro2= $c / $d;
