@@ -1,0 +1,42 @@
+$_SESSION []
+Arreglo de _SESSION
+Es un arreglo de sesiones
+valor predeterminado en apache 30
+
+--para simular sacar a alguien hasta que se autentique
+<?php
+session_star();
+if(isset($_SESSION["usuario"])){
+    include("index.html");
+    else{
+        include("login.html");
+    }
+}
+?>
+
+HTML
+form{ action="login.php" method:"post";
+
+
+}
+
+<?php
+    session_start();
+    if(isset($_POST["email"])&&isset($_POST["password"])){
+    $usuario=login(htmlspecialchars($_POST["email"]),htmlspecialchars($_POST....))
+    if($usuario!=""){
+        $_SESION["usuario"]=$usuario;
+        header("location:index.php");
+
+    }else{
+        $error= "usuario Y/O CONTRASEÑA INCORRECTA 
+    }
+    }
+>
+
+
+
+enctype="multipart/form_data"
+
+$_FILES["nombreinput"]["atributo"]
+escribir en disco 

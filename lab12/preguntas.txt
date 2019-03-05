@@ -1,0 +1,26 @@
+La inconsistencia al hacer la primera inserción que se solicita en el laboratorio se debe a que los valores
+no concuerdan con el estándar que venían siguiendo los demás registros además de que la clave se repetía.
+
+Al crear la primera llave primaria con el constraint, cuando quisimos hacer el siguiente insert con la clave 
+que se nos proporciona, no se nos permite ya que se repite la clave y por ende la llave, lo que viola la 
+la integridad referencial.
+
+Al ejecutar la sentencia de sp_helpconstraint de determinada tabla, se muestran las llaves y el tipo de llaves
+que contiene la tabla. 
+
+Para definir las llaves primarias se usa ALTER TABLE <TABLA> add constraint <nombredelakey> PRIMARY KEY
+ (<columnaausardeclave>) en caso de que sea una llave única, para una llave compuesta se utiliza
+ALTER TABLE <TABLA> add constraint <nombredelakey> PRIMARY KEY CLUSTERED (<columna1,columna2...>)
+
+Cuando se hacen registros que no se acoplan al formato de los demás registros de la tabla, no ocurre nada, ya que
+no se han establecido constraints para evitar que se repitan o no cumplan con el formato
+
+GETDATE() sirve para obtener la fecha actual en el momento en el que se ejecuta el script
+
+Después de realizar los constraints para que se permitan solo datos bajo ciertos parámetros, el programa te advierte
+que el registro que quieres hacer, no cumple con la condición (en caso de que no cumpla)
+
+
+
+
+

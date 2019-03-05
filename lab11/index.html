@@ -1,0 +1,89 @@
+<?php
+if(isset($_POST['submit'])){
+  $nombre=$_POST['first_name'];
+  $apellidos=$_POST['last_name'];
+  $contra=$_POST['password'];
+  $mail=$_POST['email'];
+  $nick=$_POST['nick'];
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laboratorio 11</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper grey darken-3">
+                &nbsp;&nbsp;&nbsp;
+          <a href="#!" class="brand-logo grey darken-3"> <i class="material-icons">send</i>Laboratorio 11: Validar formularios con php</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+            <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+            <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+            <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+          </ul>
+        </div>
+      </nav> 
+      <div class="cuadro">
+          <div  class="cuadrito">
+                <div class="row">
+                    <!-- INICIO DEL FORMULARIO-->
+                        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post" class="col s12" >
+                          <div class="row">
+                            <div class="input-field col s8">
+                              <input id="first_name" type="text" class="validate" value="<?php if(isset($first_name)) echo $nombre ?>">
+                              <label for="first_name">Nombre(s)</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                                <div class="input-field col s8">
+                                        <input id="last_name" type="text" class="validate" value="<?php if(isset($last_name)) echo $apellidos ?>">
+                                        <label for="last_name">Apellidos</label>
+                                      </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s8">
+                              <input id="password" type="password" class="validate" value="<?php if(isset($password)) echo $contra ?>">
+                              <label for="password">Password</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s8">
+                              <input id="email" type="email" class="validate" value="<?php if(isset($email)) echo $nombre ?>">
+                              <label for="email">Email</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                                <div class="input-field col s8">
+                                        <input id="nick" type="text" class="validate" value="<?php if(isset($nick)) echo $nick ?>">
+                                        <label for="nick">Nickname</label>
+                                </div>
+                          </div>
+                          <div class="row">
+                            <button class="btn waves-effect waves-light" type="submit" name="action" id="submit">Submit
+                              <i class="material-icons right">send</i>
+                            </button>
+                          </div>
+                          <?php 
+                          include ("php/valid.php")
+                          ?>
+                        </form>
+                      </div>
+          </div>
+      </div>
+</body>
+</html>
