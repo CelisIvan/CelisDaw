@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="BOOTSTRAP/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="BOOTSTRAP/css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="BOOTSTRAP/css/style.css" rel="stylesheet">
+  <link href="loginstyle.css" rel="stylesheet">
+    <title>Acceder</title>
+</head>
+
+<body>
+    <div class="formlogin">
+            <h5 class="card-header info-color white-text text-center py-4" style="background-color: #93c572">
+                    <strong>LABORATORIO 13</strong>
+            </h5>
+            <!-- Default form login -->
+<form class="text-center border border-light p-5" action="validar.php" method="POST">
+
+    <p class="h4 mb-4">Accede a tu cuenta</p>
+
+    <!-- Email -->
+    <p style="text-align:left">Nombre:</p>
+    <input type="text" id="nombre" name="nombre" class="form-control mb-4" placeholder="Nombre" required>
+
+    <!-- Password -->
+    <p style="text-align:left;">Contraseña</p>
+    <input type="password" id="contra" name="contra" class="form-control mb-4" placeholder="Contraseña" required>
+
+    <div class="d-flex justify-content-around">
+        <div>
+            <!-- Remember me -->
+            
+        </div>
+        
+    </div>
+
+    <!-- Sign in button -->
+    <button class="btn btn-info btn-block my-4" type="submit">Acceder</button>
+
+
+</form>
+<!-- Default form login -->
+    </div>
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="loginjs.js"></script>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+/* body{
+    background: linear-gradient(#EBFFF8,#42FFDB);
+} */
+.formlogin{
+    margin:auto;
+    margin-top: 5%;
+    background: linear-gradient(#F7F7F7,#EEEEEE);
+    border: 0PX;
+    border-radius: 20px;
+
+}   
+
+ @media(min-width:992px){
+    .formlogin{
+        width: 45%;
+    }
+} 
+@media(max-width:991px){
+    .formlogin{
+        width: 55%;
+    }
+}
+@media(min-width:769px){
+    .formlogin{
+        width: 55%;
+    }
+}
+@media(max-width:768px){
+    .formlogin{
+        width: 50%;
+    }
+}
+@media(min-width:577px){
+    .formlogin{
+        width: 50%;
+    }
+}
+@media(max-width:576px){
+    .formlogin{
+        width: 85%;
+    }
+}
