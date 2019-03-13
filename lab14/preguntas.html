@@ -1,0 +1,26 @@
+<div class="container">
+    <p>
+            ¿Qué es ODBC y para qué es útil?<br>
+            Open DataBase Connectivity (ODBC) es un estándar de acceso a las bases de datos desarrollado 
+            por SQL Access Group (SAG) en 1992. El objetivo de ODBC es hacer posible el acceder a cualquier
+             dato desde cualquier aplicación, sin importar qué sistema de gestión de bases de datos (DBMS) almacene los datos.<br>
+             <a href="https://es.wikipedia.org/wiki/Open_Database_Connectivity">https://es.wikipedia.org/wiki/Open_Database_Connectivity</a><br>
+            ¿Qué es SQL Injection?<br>
+            Sql Injection ó Inyección SQL es una vulnerabilidad que permite al atacante enviar o “inyectar” instrucciones SQL
+            de forma maliciosa y malintencionada dentro del código SQL programado para la manipulación de bases de datos, de
+             esta forma todos los datos almacenados estarían en peligro. La finalidad de este ataque es poder modificar del 
+             comportamiento de nuestras consultas a través de parámetros no deseados, pudiendo así falsificar identidades, 
+             obtener y divulgar información de la base de datos (contraseñas, correos, información relevante, entre otros), 
+             borrar la base de datos, cambiar el nombre a las tablas, anular transacciones, el atacante puede convertirse en
+              administrador de la misma. <br>
+              <a href="https://openwebinars.net/blog/que-es-sql-injection/">https://openwebinars.net/blog/que-es-sql-injection/</a><br>
+            ¿Qué técnicas puedes utilizar para evitar ataques de SQL Injection?<br>
+            Las funciones mysql_* (mysql_connect, mysql_query, etc.) son inseguras por naturaleza y su uso no sólo no está 
+            recomendado, sino que se consideran obsoletas y se han eliminado completamente a partir de PHP7.
+            Incluso los métodos nativos que existen en PHP para sanear las entradas de usuario (como mysql_real_escape_string) 
+            pueden presentar (raros) problemas y fallar en algunos casos como cuando se usan codificación de caracteres diferentes
+             a UTF-8 junto a versiones no actualizadas de MySQL (en las páginas de PHP para estas funciones se avisa de este riesgo).<br>
+             <a href="https://es.stackoverflow.com/questions/18232/c%C3%B3mo-evitar-la-inyecci%C3%B3n-sql-en-php">https://es.stackoverflow.com/questions/18232/c%C3%B3mo-evitar-la-inyecci%C3%B3n-sql-en-php</a><br>
+    </p>
+
+</div>
