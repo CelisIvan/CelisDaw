@@ -75,7 +75,21 @@ if ($uploadOk == 0) {
     <br>
     <hr>
 
+  <div class="container">
+      <p>
+      ¿Por qué es importante hacer un session_unset() y luego un session_destroy()?<br>
+      Porque tenemos que liberar todas las variables de sesion para no seguir oocupando memoria<br>
+¿Cuál es la diferencia entre una variable de sesión y una cookie?<br>
+La session es eso, pero la cooki es más bien un archivo que se guarda en tu computadora para que la pagina a la que accedes pueda correr mejor<br>
+¿Qué técnicas se utilizan en sitios como facebook para que el usuario no sobreescriba sus fotos en el sistema de archivos cuando sube una foto con el mismo nombre?<br>
+Les asigna nombres diferentes a las fotos, son muy largos que se generan con un algoritmo que seguramente varia dependiendo del servidor al que se sube y la región, así como el usuario y la hora
+¿Qué es CSRF y cómo puede prevenirse?<br>
+La técnica llamada falsificación de petición en sitios cruzados, proviene de su nombre en inglés Cross Site Request Forgery (CSRF o XSRF). Este ataque fuerza al 
+navegador web de su víctima, validado en algún servicio (como por ejemplo correo o home banking) a enviar una petición a una aplicación web vulnerable.<br>
+Se recomienda siempre cerrar sesion, no recordar contraseñas o incluso hacer uso de complementos que bloqueen la ejecución de scripts<br><br>
+</p>
   <a href="logout.php"> Cerrar sesion</a>
+</div>
 </div>
   <script type="text/javascript" src="loginjs.js"></script>
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
