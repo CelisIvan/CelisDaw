@@ -1,0 +1,7 @@
+El primer bloque del IF verifica que no exista ningun stored procedure que se llame igual
+para evitar que existan duplicaciones
+
+La instrucción GO sirve para separar los bloques de instrucción. Al ser un lenguaje interpretado, ejecuta
+por bloques, pero si eso se hace, no funcionaría la creación de los stored procedures, por lo que
+se ponen para que se ejecute primero una y luego otra parte
+

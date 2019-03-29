@@ -1,0 +1,23 @@
+.navi{
+    /* background-color: rgba(156, 39, 176, 0.7); */
+    /* background-color: rgba(63, 81, 181, 0.7); */
+    /* background: #1a237e; */
+    background-color: #008060;
+    /* background: radial-gradient(#9575cd,#ffffff); */
+}
+.searchi{
+    align-self: flex-end;
+    float: right;
+}
+.imagi{
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imagi img{
+    height: 100%;
+}
+footer a{
+
+    color: #7CF2FF;
+}

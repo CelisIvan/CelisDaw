@@ -11,7 +11,7 @@ function conectDb(){
     if (!$conn){
         die("Connection failed: " . mysql_connect_error());
     }
-    $conn->set_charset(" ");
+    $conn->set_charset("utf8 ");
     return $conn;
 }
 
