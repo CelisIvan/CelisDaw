@@ -1,0 +1,12 @@
+table {
+    width: 100%;
+ }
+ th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+ }
+ thead{
+     font-size: 15px;
+     font-weight: bold;
+ }

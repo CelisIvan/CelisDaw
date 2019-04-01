@@ -20,9 +20,7 @@
     //2. El archivo php que es el controlador que genera el html de la respuesta
     //3. el id del lugar donde se va a mostrar la respuesta del ajax request
     function sendRequest(idinput, filephp, idoutput){
-        
-        let NUEVO_CODIGO = 1;
-        
+        let NUEVO_CODIGO = 1;        
         //AJAX CON JQUERY
         if (NUEVO_CODIGO) {
         $.get( filephp, { pattern: document.getElementById(idinput).value })
@@ -32,8 +30,8 @@
               ajaxResponse.style.visibility = "visible";
               M.AutoInit(); //RECORDAR PONER ESTO Para que sirve el Materialize
           });
-       
         }
+
         //AJAX CON JAVASCRIPT
          else {
             request=getRequestObject();
