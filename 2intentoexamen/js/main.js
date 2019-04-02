@@ -28,7 +28,9 @@ $(document).ready(function(){
     })
 })
 
-$(document).ready(function(){
+$(document).ready(cargar_lista());
+
+function cargar_lista(){
 
     $.ajax({
         type: 'POST',
@@ -41,6 +43,38 @@ $(document).ready(function(){
     .fail(function(){
         console.log('error');
     })
-})
+}
+$(document).ready(function(){
+        $('#ambos').submit(function(ev){
+            ev.preventDefault();
+            var lugar= $('#selectlugar').val();
+            var incidente= $('#selectincidente').val();
+            console.log(lugar);
+            console.log(incidente);
+            $.ajax({
+                url: 'guardar.php',
+                type: 'POST',
+                data:{id_lugar:lugar,id_incidente:incidente},
+                dataType:'text',
+            })
+            .done(function(data){
+                console.log(lugar);
+            console.log(incidente);
+                $('#selectlugar').val("0");
+                $('#selectincidente').val("0");
+                $('#listain').html("");
+                $('#listain').html(data);
+            })
+            .fail(function(){
+                console.log('error krnal');
+            })
+        });
+        
+});
+
+
+
+
+
 
 
