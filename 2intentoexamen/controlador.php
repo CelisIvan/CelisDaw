@@ -1,8 +1,20 @@
 <?php
-    require_once ("util.php");
-    function lugar(){
-        $conn=conectDb();
-        $salida= obtener_lugar($conn);
-        return $salida;
-}   echo lugar();
+    require ("util.php");
+    $funcion=$_POST['funcion'];
+
+    switch ($funcion){
+        case 1:
+            echo lugar();   
+            break;
+        case 2:
+            echo incidentes();
+            break;
+        case 3:
+            echo imprimir_incidentes();
+            break;
+        case 4:
+            insertandoIncidente();
+            break;
+    }
+    
 ?>

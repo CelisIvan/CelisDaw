@@ -1,9 +1,9 @@
 $(document).ready(function(){
-
+    var funcion = 1;
     $.ajax({
         type: 'POST',
         url: 'controlador.php',
-        data:{'peticion': 'cargar_lugares'}
+        data:{funcion:funcion}
     })
     .done(function(lugares){
         $('#selectlugar').html(lugares)
@@ -14,11 +14,11 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-
+    var funcion = 2;
     $.ajax({
         type: 'POST',
-        url: 'controlador2.php',
-        data:{'peticion': 'cargar_incidentes'}
+        url: 'controlador.php',
+        data:{funcion:funcion}
     })
     .done(function(lugares){
         $('#selectincidente').html(lugares)
@@ -31,11 +31,11 @@ $(document).ready(function(){
 $(document).ready(cargar_lista());
 
 function cargar_lista(){
-
+    var funcion = 3;
     $.ajax({
         type: 'POST',
-        url: 'controlador3.php',
-        data:{'peticion': 'cargarlista'}
+        url: 'controlador.php',
+        data:{funcion:funcion}
     })
     .done(function(lista){
         $('#listain').html(lista)
@@ -45,6 +45,7 @@ function cargar_lista(){
     })
 }
 $(document).ready(function(){
+        var funcion = 4;
         $('#ambos').submit(function(ev){
             ev.preventDefault();
             var lugar= $('#selectlugar').val();
@@ -52,9 +53,9 @@ $(document).ready(function(){
             console.log(lugar);
             console.log(incidente);
             $.ajax({
-                url: 'guardar.php',
+                url: 'controlador.php',
                 type: 'POST',
-                data:{id_lugar:lugar,id_incidente:incidente},
+                data:{funcion:funcion, id_lugar:lugar,id_incidente:incidente},
                 dataType:'text',
             })
             .done(function(data){
