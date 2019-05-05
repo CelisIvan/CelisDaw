@@ -1,0 +1,45 @@
+La primer consulta que viene en el lab, al ejecutarse, enseñaría solo los materiales que han sido
+entregados en algún punto en el tiempo.Si no, no.
+
+Para evitar usar el operador unión en la consulta se debería de usar
+Select * From Entregan where clave=1450 and clave=1300
+
+Aparecen repetidas unas claves porque se han entregado varias veces, podemos evitar esto usando distinct
+
+Esto se debe a que el s�mbolo % actua como un comodin en el par�metro que estamos buscando
+La consulta regresa las descricpiones que empiecen con si 
+
+Al ejecturar las instrucciones de DECLARE @foo varchar y eso, lo que se hace es que estamos
+declarando variables y asign�ndoles valor, al ser variables de tipo varchar se pueden concaternar
+con @foo se establece el nombre de la variable y con set se le asigna valor
+Al ejecutar todo se obtienen las variables concatenadas
+
+SELECT RFC FROM Entregan WHERE RFC LIKE '[A-D]%'; 
+SELECT RFC FROM Entregan WHERE RFC LIKE '[^A]%'; 
+SELECT Numero FROM Entregan WHERE Numero LIKE '___6'; 
+La primera consulta devuelve todos los RFC que empiecen con letras entre la A y la D
+La segunda devuelve los RFC que no contengan la A
+La �ltima devuelve los numeros que terminan en 6
+
+Para filtrar fechas pueden ser WHERE Fecha Between fecha1 and fecha2
+
+Los paréntesis después de un where indican que hay una subconsulta realizándose
+
+La consulta con un IN
+SELECT RFC,Cantidad, Fecha,Numero 
+FROM [Entregan] 
+WHERE [Numero] Between 5000 and 5010 AND RFC IN
+ ( SELECT [RFC] 
+FROM [Proveedores] 
+WHERE RazonSocial LIKE 'La%' and [Entregan].[RFC] = [Proveedores].[RFC] ) 
+
+
+SELECT TOP 2 * FROM Proyectos 
+Muestra los primeros dos registros de la tabla indicada,
+
+Para obtener el importe de las ventas de los materiales considerando el nuevo impuesto, podnría
+SELECT m.Clave, m,Descripcion, sum((e.Costo+m.PorcentajeImpuesto)*e.Cantidad) as 'Ventas totales'
+FROM Entregan e, Materiales m
+Where e.Clave=m.Clave
+Group BY m.Clave, m.Descripción
+ORDER BY 'Ventas Totales' DESC

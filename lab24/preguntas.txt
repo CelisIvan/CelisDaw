@@ -1,0 +1,25 @@
+¿Que pasa cuando deseas realizar esta consulta? 
+Pues nos muestra la tabla de clientes-banca con las nuevas tuplas que se acaban de insertar
+
+¿Qué pasa cuando deseas realizar esta consulta? 
+Solo indica que se está ejecutando la query y se tarda y no hace nada. Pero evidentemente
+es porque el gestor de la base de datos bloquea el recurso porque la otra sesión aún está accediendo a él 
+
+
+Cuando se ejecuta el rollback se le da un "ctrl+z" a la transaccion pasada por lo que no se ejecuta
+Esto permite a la segunda sesión por fin poder acceder a los recursos que necesita.
+
+Cuando se ejecutó la transacción de movimiento sí se pudieron observar los cambios en las tuplas de
+las dos tablas relacionadas
+
+¿Para qué sirve el comando @@ERROR revisa la ayuda en línea? 
+Para detectar si hubo un error intenando completar la transacción
+Si es así, te manda un mensaje en particular
+
+¿Qué hace la transacción? 
+Inserta tuplas en la tabla de clientes_banca, pero hay una que viola el constaint porque la primary key se repite
+
+¿Hubo alguna modificación en la tabla? Explica qué pasó y por qué. 
+Te marca el error porque hay una clave que se repite, esto hace que no se complete la transacción y te mande
+el error que se definió.
+

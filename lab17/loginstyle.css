@@ -1,0 +1,79 @@
+body{
+   
+    margin: 0;
+    padding: 0;
+
+} 
+body:before{
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('mural.JPG');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-filter: blur(5px);
+    -moz-flter:blur(5px);
+    filter: blur(5px); 
+    /* padding: 50%; */
+}
+.cuerpo{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60%;
+    margin-bottom: auto;
+    /* border-style: none; */
+}
+.formlogin{
+    margin-top: 5%;
+    background: linear-gradient(#F7F7F7,#EEEEEE);
+    border: 0PX;
+    border-radius: 20px;
+     position: absolute;
+     opacity: 0.85;
+     /* width: 100%; */
+     margin-right: auto;
+     margin-left: auto;
+    
+
+}
+.errorcini{
+    color: red;
+}   
+
+ @media(min-width:992px){
+    .formlogin{
+        width: 45%;
+    }
+} 
+@media(max-width:991px){
+    .formlogin{
+        width: 55%;
+    }
+}
+@media(min-width:769px){
+    .formlogin{
+        width: 55%;
+    }
+}
+@media(max-width:768px){
+    .formlogin{
+        width: 50%;
+    }
+}
+@media(min-width:577px){
+    .formlogin{
+        width: 50%;
+    }
+}
+@media(max-width:576px){
+    .formlogin{
+        width: 85%;
+    }
+}
+/*
+
+*/

@@ -1,0 +1,52 @@
+<br><br>
+<div class="todo">
+    <div class="container">
+        <!-- Default form register -->
+    <form class="text-center border border-light p-5" action="controlador.php" style='background: linear-gradient(#E9F3FF, #E4E8E6);' >
+    
+        <p class="h4 mb-4">Regístrate</p>
+    
+        <div class="form-row mb-4">
+            <div class="col">
+                <!-- First name -->
+                <label>&nbsp; <strong>Nombre</strong></label>
+                <input type="text" name="nombre" id="nombre" class="form-control" placeholder="ej.:Pedro" required>
+            </div>
+            <div class="col">
+                <!-- Last name -->
+                <label>&nbsp; <strong>Apellidos</strong></label>
+                <input type="text" name="apellido" id="apellido" class="form-control" placeholder="ej.:Pérez Prado" required>
+            </div>
+        </div>
+    
+        <!-- E-mail -->
+        <label>&nbsp; <strong>Correo Electrónico</strong></label>
+        <input type="email" name="email" id="email" class="form-control mb-4" placeholder="ej.:fiestaplaya@mailcom" required>
+        
+            <!-- Last name -->
+            <label>&nbsp; <strong>Nombre de Usuario</strong></label>
+            <input type="text" name="username" id="username" class="form-control" placeholder="ej:.pp123" name="username" required>
+            
+        <!-- Password -->
+        <br>
+        <label><strong>Inserta tu Contraseña</strong></label>
+        <input name="contra" type="password" id="contra" class="form-control" placeholder="******" aria-describedby="defaultRegisterFormPasswordHelpBlock" required minlength="9" maxlength="70">
+        <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+            Al menos 8 caracteres y un dígito
+        </small>
+        <label><strong>Confirma tu contraseña</strong></label>
+        <input type="password" id="contraconfirm" class="form-control" placeholder="******" aria-describedby="defaultRegisterFormPasswordHelpBlock" required>
+        <small id="contrafonfirmcon" class="form-text text-muted mb-4">
+                Debe de ser igual que la contraseña previa
+        </small>
+    
+       
+    
+        <!-- Sign up button -->
+        <button class="btn btn-info my-4 btn-block" type="submit">Sign in</button>
+    
+        <!-- Social register -->
+    </form>
+    <!-- Default form register -->
+    </div>
+</div>
